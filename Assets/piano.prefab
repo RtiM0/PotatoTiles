@@ -145,4 +145,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spr: {fileID: 5086592166469246298}
   rb: {fileID: 2122958570271093688}
-  speed: 500
+  speed: 200

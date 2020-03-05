@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ClickingEventScript : MonoBehaviour
 {
     public void StartBtn(){
+        SpawnerAction.delay = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
     }
     public void QuitBtn(){
@@ -18,6 +19,7 @@ public class ClickingEventScript : MonoBehaviour
         SceneManager.LoadScene(0);
     }
     public void RestartBtn(){
+        SpawnerAction.delay=1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex-1);
     }
 }

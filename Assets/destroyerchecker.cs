@@ -17,6 +17,6 @@ public class destroyerchecker : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D other) {
         Destroy(other.gameObject);
-        Debug.Log(other.collider.tag);
+        //Debug.Log(other.collider.tag);
     }
 }

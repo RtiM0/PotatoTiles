@@ -627,11 +627,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   width: 10
   height: 5
-  min: -5
-  max: 10
   pianotile: {fileID: 5086592166469246297, guid: fde1306d3bd97eca2b476eb1749e5c38,
     type: 3}
-  delay: 0.5
 --- !u!4 &2062976381
 Transform:
   m_ObjectHideFlags: 0
@@ -640,7 +637,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062976379}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.05, y: 8.22, z: -4.1208076}
+  m_LocalPosition: {x: -0.05, y: 16.26, z: -4.1208076}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 901219505}

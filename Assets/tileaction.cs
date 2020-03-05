@@ -8,7 +8,7 @@ public class tileaction : MonoBehaviour
     // Start is called before the first frame update
     public SpriteRenderer spr;
     public Rigidbody2D rb;
-    public float speed = 200f;
+    public float speed;
     private bool isChecked=false;
     private int i = 1;
     void Start()
@@ -22,12 +22,13 @@ public class tileaction : MonoBehaviour
         rb.velocity = new Vector3(0,-speed*Time.deltaTime,0);
         if(FindObjectOfType<score>().tempScore>i*10){
             speed+=100f;
+            SpawnerAction.delay =  (200f/speed);
+            Debug.Log("Speed be"+speed);
             i++;
         }
     }
 
     private void OnMouseOver() {
-
         if(Input.GetMouseButtonDown(0)){
             if(!isChecked){
                 spr.color = Color.yellow;
@@ -38,7 +39,6 @@ public class tileaction : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D other) {
         if(spr.color == Color.yellow){
-            Debug.Log("nigga you fine");
         }else if(other.collider.tag=="border"){
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
         }
